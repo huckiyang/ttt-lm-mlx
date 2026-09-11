@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ttt-lm-mlx"
+version = "0.1.0"
+description = "Differentiable TTT-Linear and TTT-MLP sequence layers for MLX-LM"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["mlx>=0.31.2", "mlx-lm>=0.31.3", "numpy>=1.26"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "torch>=2.2", "transformers>=4.40", "safetensors>=0.4"]
+
+[tool.setuptools.packages.find]
+include = ["ttt_mlx*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

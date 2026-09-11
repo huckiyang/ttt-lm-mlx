@@ -1,7 +1,6 @@
 # TTT-LM for MLX
 
-Native MLX **TTT-Linear and TTT-MLP** sequence layers, plus a causal language
-model that uses MLX-LM's generation and checkpoint-loading interfaces. The inner
+Native MLX **TTT-Linear and TTT-MLP** sequence layers, plus a causal LM that uses MLX-LM's generation and checkpoint-loading interfaces. The inner
 learner adapts request-local fast weights from the sequence; outer training
 differentiates through those updates to learn the model's parameters.
 
